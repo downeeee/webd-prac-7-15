@@ -1,0 +1,119 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+.slide_img{
+    width: 966px; height: 400px; margin: 0 auto 50px;
+    border: 1px solid black;
+}
+
+/* 슬릭 슬라이드 수정 */
+.move .slick-slide{
+    /* li 하나하나를 지칭함 */
+
+}
+
+.move .slick-slide a{}
+
+.move .slick-slide a img{}
+
+
+/* dot수정 */
+.move .slick-dots{text-align: center;}
+
+.move .slick-dots li{display: inline-block;margin: 5px;
+                        }
+
+.move .slick-dots li button{display: inline-block; border-radius: 50%;
+                            width: 10px; height: 10px;text-indent: -9999px;
+                            background-color: gray;border: none;
+                            cursor: pointer; transition: all 0.3s;}
+
+.move .slick-dots li.slick-active button{background-color:  black;
+                                        }
+
+
+/* prev next 버튼 */
+
+.move .slick-arrow{position: absolute; top: 50%; 
+                    transform: translateY(-50%);
+                    text-indent: -9999px; border-radius: 50%;
+                    background-color: tomato; border: none; z-index: 50;
+                width: 30px; height: 30px;}
+
+.move .slick-arrow.slick-prev{left: 0;z-index: 5;}
+
+.move .slick-arrow.slick-next{right: 0;}
+
+
+
+/* .main_view영역 */
+.main_view{width: 100%; height: 480px; }
+
+.view .slick-slide{}
+.view .slick-slide a{}
+.view .slick-slide a img{}
+
+/* dots 영역 */
+.view .slick-dots{text-align: center;}
+
+.view .slick-dots li{display: inline-block; margin: 10px;}
+
+.view .slick-dots li button{height: 10px; width: 20px; background-color: rgb(255, 114, 90);
+                            border-radius: 50px; border: none; text-indent: -9999px;
+                            transition: all 0.5s;}
+
+.view .slick-dots li.slick-active button{
+    width: 30px; background-color: red;
+}
+
+/* prev next */
+.view .slick-arrow{position: absolute; z-index: 5; top: 50%;
+                    transform: translateY(-50%); width: 28px; height: 27px;
+                    text-indent: -9999px;
+                    background-color: transparent; border: none;
+                    background-image: url(../img/bg_direction_nav.png);
+                    background-repeat: no-repeat; cursor: pointer;}
+
+.view .slick-arrow.slick-prev{left: calc(50% - 700px);}
+
+.view .slick-arrow.slick-next{right: calc(50% - 700px);
+                                background-position: right;}
+
+
+
+
+
+
+
+.face_img{width: 650px; height: 124px; margin: 100px auto; 
+        border: 1px solid darkorchid;}
+
+.face .slick-slide{}
+
+.face .slick-slide img{}
+
+.face{
+
+}
+.face .slick-dots{text-align: center; bottom: 0; left: 50%; 
+                transform: translateX(-50%); position: absolute;}
+
+.face .slick-dots li{display: inline-block; margin: 5px;  
+                    }
+.face .slick-dots li button{width: 16px; height: 16px; border: none; background-color: thistle;
+                            text-indent: -9999px;}
+
+.face .slick-dots li.slick-active button{background-color: aquamarine;}
+
+/* .face .button_group{position: absolute; z-index: 100; width: 50px; height: 50px;
+                    } */
+
+.face .slick-arrow{position: absolute; z-index: 20; top: 50%;
+                    transform: translateY(-50%); width: 20px; height: 50px;
+                    border: none;}
+
+.face .slick-arrow.slick-prev{left: -80px;border-radius: 0 10px 10px 0;}
+
+.face .slick-arrow.slick-next{right: -80px; border-radius: 0 10px 10px 0;}
