@@ -14,5 +14,10 @@ $(function(){
     $(".move").slick( {
         autoplay:true , dots:true , arrows:false, autoplaySpeed:2000,
         adaptiveHeight:true})
+
+
+    $(".close").click(function(){
+        $(".pop").hide()
+    })
         
 })//jq end

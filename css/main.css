@@ -94,7 +94,7 @@
 
 .move .slick-dots li{display: inline-block; margin: 7px; }
 
-.move .slick-dots li button{background-color: #8d8d8d;border-radius: 50%;
+.move .slick-dots li button{background-color: #d1d1d1;border-radius: 50%;
                             border: none; width: 15px; height: 15px; text-indent: -9999px;
                             cursor: pointer;}
 
@@ -118,7 +118,7 @@
 .mall > p{padding-left: 20px; padding-top: 10px;}
 
 .mall_list{display: flex; justify-content: center; margin-top: 50px;text-align: center;}
-.mall_list li:nth-child(2){border-left: 1px dotted #ddd; border-right: 1px dotted #ddd;}
+.mall_list li:nth-child(2){border-left: 1px dotted #707070; border-right: 1px dotted #707070;}
 .mall_list li a{}
 .mall_list li a img{width: 80%;}
 .mall_list li a p{font-size: 12px;}
@@ -148,8 +148,78 @@
 
 .cont03_list h3{margin-bottom: 15px; }
 
-.event{}
+.event_list{}
+
+.event_list li{}
+
+.event_list li a{float: left; width: 70%;
+                text-overflow: ellipsis; 
+                text-wrap: nowrap; 
+                overflow: hidden; font-size: 14px; margin-bottom: 10px;}
+
+.event_list li span{float: right; font-size: 14px;}
+
+.b2b p{line-height: 1.7; font-size: 14px;letter-spacing: -1px; }
+
+.more{margin-top: 15px;}
 
 
+/* news영역 */
+
+
+.table{font-size: 14px; width: 100%; table-layout: fixed;}
+
+.table td{padding: 5px 0;}
+
+.col1{width: 70%; text-overflow: ellipsis; 
+        /* text-wrap: nowrap; */ 
+        overflow: hidden;white-space: nowrap;  padding: 5px;}
+
+.col2{width: 30%; text-align: right;}
+
+
+/* notice 영역 */
+
+.notice_list{text-align: right;}
+
+.notice_list li{display: inline-block;text-align: center;margin-top: 20px;}
+
+.notice_list li:nth-child(1){border-right: 1px dotted rgb(75, 75, 75);padding-right: 10px;}
+
+.notice_list li a{display: block;}
+
+.notice_list li span{display: block; font-size: 11px; font-weight: bold;
+                        margin-top: 10px;}
+
+.cont4{margin: 50px 0; padding: 50px 0; border-top: 2px solid red;width: 100%;}
+
+
+
+/* footer 영역 */
+
+.footer{ background-color: #ba000d; padding: 20px 0;}
+
+.f_inner{width: 940px; margin: 0 auto;}
+
+.f_menu{color: white;}
+.f_menu li{float: left;}
+.f_menu li a{display: block; padding: 5px 10px;}
+
+.f_menu li a::after{content: ""; display: block; width: 1px; height: 12px; 
+                        background-color: white; position: absolute; right: 0; top: 0;}
+
+.f_menu li:last-child a::after{display: none;}
+
+.address{clear: both; font-style: normal; padding-top: 10px; color: #0e0e0e;}
+
+.fix{position: fixed; top: 50px; right: 300px; }
+
+
+/* 팝업 */
+
+.pop{width: 500px; height: 700px; border: 10px solid rgb(255, 255, 97);
+        box-sizing: unset; position: absolute; left: 0; top: 0; z-index: 30;}
+.close{width: 100%; height: 50px; cursor: pointer; background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(216, 216, 216);}
 
 
